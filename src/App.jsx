@@ -9,6 +9,7 @@ import PrivateRoute from "./routes/PrivateRoute";
 import NuevoPresupuesto from "./pages/NuevoPresupuesto";
 import DetallePresupuesto from "./pages/DetallePresupuesto";
 import NuevoCliente from "./pages/NuevoCliente";
+import ForgotPassword from "./pages/ForgotPassword";
 
 function App() {
   return (
@@ -41,6 +42,11 @@ function App() {
         <Route
          path="/clientes/nuevo"
          element={<PrivateRoute><NuevoCliente /></PrivateRoute>}
+         />
+
+         <Route
+         path="/forgotpassword"
+         element={<ForgotPassword />} 
          />
       </Routes>
     </BrowserRouter>

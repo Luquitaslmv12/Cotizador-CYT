@@ -282,8 +282,8 @@ const PresupuestoDetalle = () => {
                   <td className="p-2 border">{p.tipo}</td>
                   <td className="p-2 border">{p.ancho}</td>
                   <td className="p-2 border">{p.alto}</td>
-                  <td className="p-2 border">{p.cantidad}</td>
-                  <td className="p-2 border">${p.precio.toFixed(2)}</td>
+                  {/* <td className="p-2 border">{p.cantidad}</td> */}
+                  {/* <td className="p-2 border">${p.precio.toFixed(2)}</td> */}
                   <td className="p-2 border">
                     ${(
                       (parseFloat(p.ancho) || 0) *
